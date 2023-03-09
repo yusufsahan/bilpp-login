@@ -1,0 +1,458 @@
+/*? Base Css Start */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+}
+
+/*! Base Css End */
+
+/*? Container Left Start */
+
+.container-left {
+    background: #000;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 37%;
+    justify-content: center;
+    padding: 57px 64px;
+}
+
+/*? Logo Start */
+
+.container-left .logo img {
+    width: 162px;
+    user-select: none;
+}
+
+/*! Logo End */
+
+/*? Links Start */
+
+.container-left .links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.container-left .links ul {
+    display: flex;
+    align-items: center;
+    column-gap: 42px;
+}
+
+.container-left .links ul li img {
+    height: 40px;
+}
+
+.container-left .links .link-text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+/*! Links End */
+
+/*? Lisans Start */
+
+.container-left .lisans {
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-left .lisans h2 {
+    color: #FFD600;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.container-left .lisans a {
+    color: #FFD600;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+/*! Lisans End */
+
+/*! Container Left End */
+
+/*? Container Right Start */
+
+.container-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-right .content {
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    padding: 0 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 32px;
+}
+
+.content .content-logo {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.content .content-logo img {
+    height: 40px;
+}
+
+/*? Content Header Start */
+
+.content .content-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.content .content-header .title {
+    font-size: 36px;
+    width: 600;
+    line-height: 43px;
+}
+
+.content .content-header .min-title {
+    color: #999999;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.content .content-header .min-title a {
+    color: #FFD600;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/*! Content Header End */
+
+/*? Content Form Start */
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+/*? Email Start */
+
+.content-form .email {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.content-form .email .input {
+    position: relative;
+}
+
+.content-form .email .e-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #000;
+    line-height: 14px;
+}
+
+.content-form .email .input input {
+    width: 100%;
+    height: 48px;
+    padding: 16px 48px 16px 16px;
+    border-radius: 10px;
+    border: 2px solid #cecece;
+    outline: none;
+}
+
+.content-form .email .input input:focus {
+    border-color: #FFD600;
+}
+
+.content-form .email .input img {
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translate( -50%, -50%);
+}
+
+/*! Email End */
+
+/*? Password Start */
+
+.content-form .password {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.content-form .password .p-title {
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.content-form .password .input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+}
+
+.content-form .password .input input {
+    width: 100%;
+    height: 48px;
+    padding: 16px 48px 16px 16px;
+    border-radius: 10px;
+    border: 2px solid #cecece;
+    outline: none;
+}
+
+.content-form .password .input input:focus {
+    border-color: #FFD600;
+}
+
+.content-form .password .input img {
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translate(-50%,-50%);
+}
+
+.content-form .password a {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+/*! Password End */
+
+/*? Button Start */
+
+.content-form button {
+    width: 100%;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #FFD600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.content-form button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/*! Button End */
+
+/*! Content Form End */
+
+/*? Content Links Start */
+
+.content .content-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.content .content-links .text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.content .content-links .buttons {
+    display: flex;
+    column-gap: 8px;
+}
+
+.content .content-links .buttons button {
+    width: 254px;
+    padding: 12px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #F1F3F7;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+/*! Content Links End */
+
+/*? Content İnfo Start */
+
+.content .content-info {
+    text-align: center;
+}
+
+.content .content-info .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.content .content-info .text a {
+    color: #FFD600;
+}
+
+/*! Content İnfo End */
+
+/*! Container Right End */
+
+/*? Responsive Start */
+
+@media (max-width: 1420px) {
+    .container-left .lisans {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content .content-links .buttons {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .content .content-links .buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-left .links {
+        row-gap: 15px;
+    }
+    .container-left .links ul {
+        column-gap: 20px;
+    }
+    .container-left .links ul li img {
+        height: 30px;
+    }
+    .container-left .links .link-text {
+        font-size: 13px;
+    }
+    .container-left .lisans {
+        display: block;
+    }
+    .container-left .lisans h2 {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .content-logo {
+        display: flex;
+    }
+    .container-left {
+        display: none;
+    }
+    .container-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .content-logo img {
+        height: 40px;
+    }
+    .content .content-logo {
+        height: 100px;
+    }
+    .container-right .content {
+        padding: 0 50px;
+    }
+    .container-right .content {
+        row-gap: 20px;
+    }
+    .content .content-header {
+        row-gap: 4px;
+    }
+    .content .content-header .title {
+        font-size: 25px;
+    }
+    .content .content-header .min-title {
+        font-size: 15px;
+    }
+    .content .content-header .min-title a {
+        font-size: 15px;
+    }
+    .content-form {
+        row-gap: 15px;
+    }
+    .content-form .email .input input {
+        height: 35px;
+    }
+    .content-form .email .input img {
+        height: 13px;
+    }
+    .content-form .password .input input {
+        height: 35px;
+    }
+    .content-form .password .input img {
+        height: 13px;
+    }
+    .content-form .password a {
+        font-size: 10px;
+    }
+    .content .content-info .text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container-right .content {
+        padding: 0 50px;
+    }
+}
+
+/*! Responsive End */
